@@ -18,8 +18,13 @@
 <body>
   <ul>
     <?php
-    foreach ($animals as $animal) : ?>
-      <li><?= $animal; ?></li>
+    foreach ($task as $feature => $value) : ?>
+      <li>
+        <strong>
+          <?= $feature; ?>
+        </strong>
+        <?= $value; ?>
+      </li>
     <?php endforeach; ?>
   </ul>
 </body>
