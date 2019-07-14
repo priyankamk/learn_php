@@ -16,17 +16,24 @@
 </head>
 
 <body>
+  <h1>Task for the day</h1>
+
   <ul>
-    <?php
-    foreach ($task as $feature => $value) : ?>
-      <li>
-        <strong>
-          <?= $feature; ?>
-        </strong>
-        <?= $value; ?>
-      </li>
-    <?php endforeach; ?>
+    <li>
+      <strong>Name: </strong> <?= $task["title"]; ?>
+    </li>
+    <li>
+      <strong>Due Date:</strong> <?= $task["due"]; ?>
+    </li>
+    <li>
+      <strong>Person completed: </strong> <?= $task["assigned_to"]; ?>
+    </li>
+    <li>
+      <strong>Status: </strong> <?= $task["completed"] ? "completed" : "incomplete" ?>
+    </li>
   </ul>
+
+
 </body>
 
 </html>
