@@ -18,9 +18,9 @@
 <body>
   <header>
     <h1>
-      <?php
-      $name = $_GET['name'];
-      echo "Hello, $name";
-      ?>
+      <?= "Hello, " . htmlspecialchars($_GET['name']); ?>
     </h1>
-  </header </body> </html>
+  </header>
+</body>
+
+</html>
